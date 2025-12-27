@@ -12,6 +12,12 @@ Ran:
 python download_data.py --zip-path ~/Downloads/diabetes+130-us+hospitals+for+years+1999-2008.zip
 ```
 
+Then made splits:
+
+```
+python make_splits.py
+```
+
 For scoring submissions, go into:
 
 ```
