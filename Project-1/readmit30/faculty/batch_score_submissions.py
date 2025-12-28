@@ -127,7 +127,7 @@ def main():
     ap.add_argument("--hidden-labels", required=True, help="Faculty-only labels CSV (row_id, readmit30).")
     ap.add_argument("--train-path", default="", help="Optional override for TRAIN_PATH passed to notebooks.")
     ap.add_argument("--dev-path", default="", help="Optional override for DEV_PATH passed to notebooks.")
-    ap.add_argument("--timeout", type=int, default=1200)
+    ap.add_argument("--timeout", type=int, default=10000)
     ap.add_argument("--workdir", default="faculty_workdir", help="Where to checkout repos.")
     ap.add_argument("--use-venv", action="store_true", help="Create a per-team venv for isolation (slower).")
     ap.add_argument("--python", default=sys.executable, help="Base python to use (ignored if --use-venv).")
